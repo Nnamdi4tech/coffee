@@ -383,85 +383,41 @@
             </div>
          </div>
         <!-- Time-Board ends -->
-
         </div>
       </div>
+      <!-- end of the row -->
       <br>
 
-      <!-- form section -->
-      <form class="row g-3">
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Receivers Name</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
+      
 
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Receivers Number</label>
-          <input type="text" class="form-control" id="text">
-        </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Number Of Packs</label>
-          <input type="number" class="form-control" id="">
-        </div>
+      <div class="row">
         <div class="col-12">
-          <label for="inputAddress" class="form-label">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="Receivers address">
+          <div class="container">
+            <button type="submit" class="btn-A" onclick="openpopup()">Click To Order</button>
+            <!--Let use a function by saying Onclick open popup -->
+        
+        
+            <div class="popup" id="popup">
+                <img src="./pop up.jpeg" alt="">
+                <H2>Thank you</H2>
+                <p>Your details has been succeefully submitted. Thank!</p>
+                <button type="button" onclick="closepopup()">Ok</button>
+            </div>
+           </div> 
         </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-          </div>
-        </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Order</button>
-        </div>
-        <center><p class="copyright">&copy;2023<i>greencoffee.</i></p></center>
-      </form>
+      </div>
 
-
-
+      <hr>
+      <center><p class="copyright">&copy;2023<i>greencoffee.</i></p></center>
+      <br>
+      
       
       
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+       
 
 
 
@@ -950,24 +906,9 @@
       -->
 
 
-     <script>
+       
 
-      //    Navigation Toggle script start here
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('.dropdown_menu')
-  
-  
-        toggleBtn.onclick = function (){
-          dropDownMenu.classList.toggle('open')
-          const isOpen = dropDownMenu.classList.contains('open')
-  
-          toggleBtnIcon.classList =isOpen
-          ? 'fa-solid fa-xmark'
-          : 'fa-solid fa-bars'
-        }
-      // Navigation Toggle script ends here
-     </script>
+
 
       <!-- Bootstrap script start here -->
       <!-- Optional JavaScript; choose one of the two! -->
@@ -982,15 +923,36 @@
     -->
     <script>
       var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-return new bootstrap.Tooltip(tooltipTriggerEl)
-})
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
 
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-return new bootstrap.Popover(popoverTriggerEl)
-})
-  </script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+    })
+    </script>
+
+
+    <!-- Let defined the two functions -->
+    <script>
+    let popup = document.getElementById("popup");
+
+    // Let defined the function for open
+    function openpopup(){
+      popup.classList.add("open-popup");
+    }
+
+    // Let defined the function for close
+    function closepopup(){
+      popup.classList.remove("open-popup");
+    }
+    </script>
+
+
+
+
+
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js" integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

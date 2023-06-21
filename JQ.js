@@ -23,7 +23,8 @@ $("document").ready(function(){
       heading : "Customer service!!",
       icon : "info",
       showHideTransition : "slide",
-      allowToastClose : false,                     
+      allowToastClose : false,
+      position : "bottom-right",                     
   
   
   //   bgColor : 'blue',               Background color for toast
@@ -34,6 +35,10 @@ $("document").ready(function(){
   //   textAlign : 'left',             Alignment of text i.e. left, right, center
   //   position : 'bottom-left'       bottom-left or bottom-right or bottom-center or top-left or 
   });
+
+
+
+  
   
   
 
