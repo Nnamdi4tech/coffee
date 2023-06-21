@@ -3,16 +3,18 @@ $("document").ready(function(){
 
 
     // Dialog box, that is the message you receive you you send a messg or click a button
- $("#button").click(function(){
-    $("#dialog").dialog("open");
-   })
+//  $("#button").click(function(){
+//     $("#dialog").dialog("open");
+//    })
   
-   $("#dialog").dialog({
-    title: "Thank you for contacting",
-    closeOnEscape: false,
-    modal: true,
-    autoOpen: false
-   })
+//    $("#dialog").dialog({
+//     title: "Thank you for contacting",
+//     closeOnEscape: false,
+//     modal: true,
+//     autoOpen: false
+//    })
+
+
    // toaste
    $.toast({
       text : "07032958667.",
