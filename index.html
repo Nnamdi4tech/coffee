@@ -14,6 +14,16 @@
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Front Awesome ends here -->
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0JFLHXSNSP"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0JFLHXSNSP');
+    </script>
+
     <!-- jQuery-UI starts here -->
     <!-- <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.css">
     <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.structure.css">  
@@ -174,6 +184,20 @@
 
               <!-- video -->
               <video autoplay muted src="./VID-20230608-WA0012.mp4" width="420px"><i>Naturelle store</i></video>
+              <div class="containerB">
+                <button type="submit" class="btn-B" onclick="openpopup()">Speak With a Customer Services</button>
+                <!--Let use a function by saying Onclick open popup -->
+            
+            
+                <div class="popupB" id="popupB">
+                    <img src="./customer-service (1).jpg" alt="">
+                    <H4>Hello!</H4>
+                    <p>I'm Uche Jacob, kindly</p>
+                    <p><ion-icon name="call-outline"></ion-icon>07032958667</p>
+                    <p><ion-icon name="logo-whatsapp"></ion-icon>07032958667</p>
+                    <button type="button" onclick="closepopup()">Ok</button>
+                </div>
+               </div> 
               <!-- <button class="btnlogin-popup contact-button"><a href="#order">Order Now</a></button> -->
 
               
@@ -949,6 +973,25 @@
       popup.classList.remove("open-popup");
     }
     </script>
+
+    <!-- Let defined the two functions for popup-B -->
+    <script>
+      let popupB = document.getElementById("popupB");
+  
+      // Let defined the function for open
+      function openpopup(){
+        popupB.classList.add("open-popup");
+      }
+  
+      // Let defined the function for close
+      function closepopup(){
+        popupB.classList.remove("open-popup");
+      }
+      </script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
 
