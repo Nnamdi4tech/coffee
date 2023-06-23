@@ -16,6 +16,23 @@ nav{
 
 }
 
+.btn a{
+    color: green;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.btn a:hover{
+    scale: 1.05;
+    color: #ffc107;
+}
+.btn a:active{
+    scale: 0.95;
+}
+
 /* Main page styling start here */
 
 
@@ -225,16 +242,31 @@ nav{
     color: green;
 }
 
-.btn-B{
+.btnbb{
     position: absolute;
     padding: 10px 60px;
-    background-color: #fff;
-    border: 0;
+    color: #fff;
+    border: 3px solid;
     outline: none;
     cursor: pointer;
     font-size: 22px;
     font-weight: 500;
-    border-radius: 30px;
+    /* border-radius: 10px; */
+    cursor: pointer;
+    background: linear-gradient(to right, transparent 50%, #ffc107 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 0.5s;
+}
+.btn-B{
+    border-radius: 10px;
+}
+/* .small-ok{
+    position: relative;
+} */
+button:hover{
+    background-position: right;
+    color: #000;
 }
 
 .containerB{
